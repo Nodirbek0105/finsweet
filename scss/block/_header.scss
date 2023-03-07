@@ -1,0 +1,106 @@
+nav {
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+  .navbar-light {
+    .navbar-nav {
+      .nav-link:hover {
+        color: black;
+      }
+    }
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.nav-item {
+  button {
+    background-color: $black;
+    color: $green-success;
+    border: none;
+  }
+  button:hover {
+    background-color: $green-success;
+    color: $black;
+    border: none;
+  }
+}
+
+header {
+  width: 100%;
+  background-image: url(../../img/BGi.png);
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 60px;
+  .container {
+    padding: 50px;
+    color: $green-success;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .top {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-direction: column;
+    }
+    .top-title {
+      max-width: 69%;
+      font-size: 36px;
+    }
+    .top-about {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .top-about-play {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img {
+          width: 20px;
+        }
+      }
+    }
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      div {
+        min-width: 18%;
+      }
+      .collected {
+        min-width: 22%;
+      }
+      .line {
+        width: 100%;
+        background-color: $green-success;
+        height: 1px;
+        display: block;
+      }
+    }
+  }
+  @media (max-width: 988px) {
+    .top{
+      align-items: center;
+    }
+    .top-title {
+      font-size: 48px;
+      max-width: 53%;
+    }
+    .top-about{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}

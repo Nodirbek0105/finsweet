@@ -1,0 +1,36 @@
+.primary-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 32px;
+  gap: 10px;
+  background: #70c174;
+  font-size: 16px;
+  backdrop-filter: blur(40px);
+  border-radius: 4px;
+}
+.secondary-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 32px;
+  gap: 10px;
+  font-size: 16px;
+  background: $green-success;
+  backdrop-filter: blur(40px);
+  border-radius: 4px;
+}
+.button-black {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 32px;
+  gap: 10px;
+  font-size: 16px;
+  background: #1d2130;
+  backdrop-filter: blur(40px);
+  border-radius: 4px;
+}
